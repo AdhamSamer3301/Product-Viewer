@@ -31,6 +31,10 @@ extension MainVC : UICollectionViewDelegate, UICollectionViewDataSource, UIColle
         10
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let productDetailsVC = self.storyboard?.instantiateViewController(withIdentifier: "productDetailsVC") as! ProductDetailsVC
+        navigationController?.pushViewController(productDetailsVC, animated: true)
+    }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "mainCVCell", for: indexPath) as! MainCVCell
         return cell
@@ -39,7 +43,7 @@ extension MainVC : UICollectionViewDelegate, UICollectionViewDataSource, UIColle
         let orientation = UIDevice.current.orientation
         switch orientation {
             case .landscapeRight, .landscapeLeft:
-                return CGSize(width: (collectionView.frame.width / 2.2)  , height: collectionView.frame.height / 2)
+                return CGSize(width: (collectionView.frame.width / 2.2)  , height: collectionView.frame.height / 1.5)
             default:
                 return CGSize(width: (collectionView.frame.width / 2.2)  , height: collectionView.frame.height / 3)
         }
