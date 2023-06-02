@@ -8,13 +8,15 @@
 import Foundation
 
 // MARK: - Product
-struct Product {
+
+struct Product: Codable {
     let product: ProductClass?
     let productMerchants: [ProductMerchant]?
 }
 
 // MARK: - ProductClass
-struct ProductClass {
+
+struct ProductClass: Codable {
     let id: String?
     let name: String?
     let description: String?
@@ -23,20 +25,23 @@ struct ProductClass {
 }
 
 // MARK: - ProductMerchant
-struct ProductMerchant {
+
+struct ProductMerchant: Codable {
     let merchant: Merchant?
     let merchantProduct: MerchantProduct?
     let productMerchant: SingleProductMerchant?
 }
 
 // MARK: - Merchant
-struct Merchant {
+
+struct Merchant: Codable {
     let id: String?
     let name: String?
 }
 
 // MARK: - MerchantProduct
-struct MerchantProduct {
+
+struct MerchantProduct: Codable {
     let id: String?
     let price: String?
     let upc: String?
@@ -46,6 +51,7 @@ struct MerchantProduct {
 }
 
 // MARK: - SingleProductMerchant
+
 struct SingleProductMerchant {
     let id: String?
     let productId: String?
