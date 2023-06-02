@@ -25,27 +25,28 @@
                     <view contentMode="scaleToFill" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="3wp-oo-ZjV">
                         <rect key="frame" x="2" y="156" width="178" height="79"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" preservesSuperviewLayoutMargins="YES" text="Nameeeeeeeeeeeeeeeeee" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="zVt-AZ-MHc">
-                                <rect key="frame" x="4" y="4" width="116" height="34.666666666666664"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18.200000762939453"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" preservesSuperviewLayoutMargins="YES" text="Suave Kids Double Dutch Apple Detangling Spray, 10.5 oz" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="zVt-AZ-MHc">
+                                <rect key="frame" x="4" y="4" width="116" height="33"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitleeeeeeeeeeeeeeeeeeeeeeee" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="qeF-40-3SK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="1" translatesAutoresizingMaskIntoConstraints="NO" id="qeF-40-3SK">
                                 <rect key="frame" x="4" y="39" width="170" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="dFE-54-q4c"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <string key="text">Suave Kids Double Dutch Apple Detangling Spray: Tames the toughest knots and tangles Makes combing through hair a cinch Hair will be soft with no more tangles Ophthalmologist tested and dermatologist tested Tear-free and hypoallergenic Use on wet or dry hair to eliminate knots and tangles Alcohol free</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000.00$" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="Oiy-e0-92a">
-                                <rect key="frame" x="124" y="10.000000000000002" width="52" height="31.666666666666671"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.24$" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="Oiy-e0-92a">
+                                <rect key="frame" x="124" y="10" width="52" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="52" id="3Xb-VC-Bk5"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -55,11 +56,12 @@
                             <constraint firstItem="qeF-40-3SK" firstAttribute="leading" secondItem="3wp-oo-ZjV" secondAttribute="leading" constant="4" id="7EZ-S3-nX7"/>
                             <constraint firstItem="zVt-AZ-MHc" firstAttribute="top" secondItem="3wp-oo-ZjV" secondAttribute="top" constant="4" id="8lA-p9-Ofl"/>
                             <constraint firstAttribute="trailing" secondItem="Oiy-e0-92a" secondAttribute="trailing" constant="2" id="A0j-OD-EHM"/>
-                            <constraint firstItem="qeF-40-3SK" firstAttribute="top" secondItem="Oiy-e0-92a" secondAttribute="bottom" constant="-2.6666666666666714" id="Io0-qY-zz2"/>
+                            <constraint firstItem="qeF-40-3SK" firstAttribute="top" secondItem="Oiy-e0-92a" secondAttribute="bottom" constant="2" id="Io0-qY-zz2"/>
                             <constraint firstAttribute="bottom" secondItem="qeF-40-3SK" secondAttribute="bottom" constant="3" id="O7o-6E-9PX"/>
                             <constraint firstItem="zVt-AZ-MHc" firstAttribute="leading" secondItem="3wp-oo-ZjV" secondAttribute="leading" constant="4" id="S3Y-EJ-prt"/>
                             <constraint firstItem="Oiy-e0-92a" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zVt-AZ-MHc" secondAttribute="leading" priority="750" constant="120" id="UoS-5Y-qEP"/>
                             <constraint firstItem="Oiy-e0-92a" firstAttribute="leading" secondItem="zVt-AZ-MHc" secondAttribute="trailing" constant="4" id="dza-jY-zYb"/>
+                            <constraint firstItem="qeF-40-3SK" firstAttribute="top" secondItem="zVt-AZ-MHc" secondAttribute="bottom" constant="2" id="hCF-EE-mk5"/>
                             <constraint firstItem="Oiy-e0-92a" firstAttribute="top" secondItem="3wp-oo-ZjV" secondAttribute="top" constant="10" id="ilY-46-2IR"/>
                             <constraint firstAttribute="trailing" secondItem="qeF-40-3SK" secondAttribute="trailing" constant="4" id="qox-fw-yRN"/>
                         </constraints>
@@ -72,12 +74,18 @@
                 <constraint firstItem="udL-Nh-dFD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="AU7-aV-AlR"/>
                 <constraint firstAttribute="bottom" secondItem="3wp-oo-ZjV" secondAttribute="bottom" constant="2" id="Fop-aA-Occ"/>
                 <constraint firstItem="3wp-oo-ZjV" firstAttribute="top" secondItem="udL-Nh-dFD" secondAttribute="bottom" id="REy-9m-xoR"/>
-                <constraint firstItem="3wp-oo-ZjV" firstAttribute="height" relation="lessThanOrEqual" secondItem="ZTg-uK-7eu" secondAttribute="height" multiplier="0.44382" id="WZf-M0-TNL"/>
+                <constraint firstItem="3wp-oo-ZjV" firstAttribute="height" secondItem="ZTg-uK-7eu" secondAttribute="height" multiplier="0.44382" id="WZf-M0-TNL"/>
                 <constraint firstAttribute="trailing" secondItem="3wp-oo-ZjV" secondAttribute="trailing" constant="2" id="heb-ij-m9A"/>
                 <constraint firstAttribute="trailing" secondItem="udL-Nh-dFD" secondAttribute="trailing" constant="2" id="m0W-K8-cs5"/>
                 <constraint firstItem="3wp-oo-ZjV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="oMq-xw-6Hh"/>
             </constraints>
             <size key="customSize" width="182" height="237"/>
+            <connections>
+                <outlet property="productDescription" destination="qeF-40-3SK" id="Yra-nq-uGU"/>
+                <outlet property="productImage" destination="udL-Nh-dFD" id="hq9-mv-dMd"/>
+                <outlet property="productName" destination="zVt-AZ-MHc" id="uwk-K3-O5y"/>
+                <outlet property="productPrice" destination="Oiy-e0-92a" id="D0T-fo-jbE"/>
+            </connections>
             <point key="canvasLocation" x="143.5114503816794" y="52.464788732394368"/>
         </collectionViewCell>
     </objects>

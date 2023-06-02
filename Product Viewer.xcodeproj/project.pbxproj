@@ -20,7 +20,6 @@
 		DEBECAD12A2622DF0005A65B /* Product_ViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBECAD02A2622DF0005A65B /* Product_ViewerUITests.swift */; };
 		DEBECAD32A2622DF0005A65B /* Product_ViewerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBECAD22A2622DF0005A65B /* Product_ViewerUITestsLaunchTests.swift */; };
 		DEBECAE52A2623400005A65B /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBECAE42A2623400005A65B /* Product.swift */; };
-		DEBECAEA2A2624150005A65B /* ProductDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBECAE92A2624150005A65B /* ProductDetailsVC.swift */; };
 		DEBECAEC2A2628850005A65B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBECAEB2A2628850005A65B /* ViewModel.swift */; };
 		DEBECAF02A2628BB0005A65B /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBECAEF2A2628BB0005A65B /* Protocols.swift */; };
 		DEBECAF22A2628C60005A65B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBECAF12A2628C60005A65B /* NetworkService.swift */; };
@@ -29,6 +28,7 @@
 		DEBECAFB2A26871C0005A65B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DEBECAFA2A26871C0005A65B /* Kingfisher */; };
 		DEBECAFE2A2687EA0005A65B /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = DEBECAFD2A2687EA0005A65B /* Reachability */; };
 		DEBECB012A2688190005A65B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DEBECB002A2688190005A65B /* Alamofire */; };
+		DEE0B0D52A295D78000E04CA /* ProductDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE0B0D42A295D78000E04CA /* ProductDetailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,12 +66,12 @@
 		DEBECAD02A2622DF0005A65B /* Product_ViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product_ViewerUITests.swift; sourceTree = "<group>"; };
 		DEBECAD22A2622DF0005A65B /* Product_ViewerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product_ViewerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DEBECAE42A2623400005A65B /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
-		DEBECAE92A2624150005A65B /* ProductDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsVC.swift; sourceTree = "<group>"; };
 		DEBECAEB2A2628850005A65B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		DEBECAEF2A2628BB0005A65B /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		DEBECAF12A2628C60005A65B /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		DEBECAF32A2628D00005A65B /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		DEBECAF62A2628F80005A65B /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		DEE0B0D42A295D78000E04CA /* ProductDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,7 +219,7 @@
 		DEBECAE82A26239B0005A65B /* DetailsScreen */ = {
 			isa = PBXGroup;
 			children = (
-				DEBECAE92A2624150005A65B /* ProductDetailsVC.swift */,
+				DEE0B0D42A295D78000E04CA /* ProductDetailsVC.swift */,
 			);
 			path = DetailsScreen;
 			sourceTree = "<group>";
@@ -406,9 +406,9 @@
 				DEBECAE52A2623400005A65B /* Product.swift in Sources */,
 				DEBECAAD2A2622DC0005A65B /* AppDelegate.swift in Sources */,
 				DEBECAF22A2628C60005A65B /* NetworkService.swift in Sources */,
+				DEE0B0D52A295D78000E04CA /* ProductDetailsVC.swift in Sources */,
 				DE9197042A28FE5D0015CBC3 /* MainCVCell.swift in Sources */,
 				DEBECAAF2A2622DC0005A65B /* SceneDelegate.swift in Sources */,
-				DEBECAEA2A2624150005A65B /* ProductDetailsVC.swift in Sources */,
 				DEBECAEC2A2628850005A65B /* ViewModel.swift in Sources */,
 				DEBECAF42A2628D00005A65B /* CoreDataManager.swift in Sources */,
 				DEBECAF02A2628BB0005A65B /* Protocols.swift in Sources */,
