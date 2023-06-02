@@ -52,7 +52,7 @@ struct MerchantProduct: Codable {
 
 // MARK: - SingleProductMerchant
 
-struct SingleProductMerchant {
+struct SingleProductMerchant: Codable {
     let id: String?
     let productId: String?
     let upc: String?
