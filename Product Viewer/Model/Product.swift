@@ -7,57 +7,53 @@
 
 import Foundation
 
-// MARK: - Product
+// This file was generated from JSON Schema using quicktype, do not modify it directly.
+// To parse the JSON, add this file to your project and do:
+//
+//   let product = try? JSONDecoder().decode(Product.self, from: jsonData)
 
+import Foundation
+
+// MARK: - Product
 struct Product: Codable {
-    let product: ProductClass?
-    let productMerchants: [ProductMerchant]?
+    var Product: ProductClass?
+    var ProductMerchants: [ProductMerchantElement]?
 }
 
 // MARK: - ProductClass
-
 struct ProductClass: Codable {
-    let id: String?
-    let name: String?
-    let description: String?
-    let price: String?
-    let imageUrl: String?
+    var id: String?
+    var name: String?
+    var description: String?
+    var price: String?
+    var imageUrl: String?
 }
 
-// MARK: - ProductMerchant
-
-struct ProductMerchant: Codable {
-    let merchant: Merchant?
-    let merchantProduct: MerchantProduct?
-    let productMerchant: SingleProductMerchant?
+// MARK: - ProductMerchantElement
+struct ProductMerchantElement: Codable {
+    var Merchant: Merchant?
+    var MerchantProduct: MerchantProduct?
+    var ProductMerchant: ProductMerchantProductMerchant?
 }
 
 // MARK: - Merchant
-
 struct Merchant: Codable {
-    let id: String?
-    let name: String?
+    var id: String?
+    var name: String?
 }
 
 // MARK: - MerchantProduct
-
 struct MerchantProduct: Codable {
-    let id: String?
-    let price: String?
-    let upc: String?
-    let sku: String?
-    let buyUrl: String?
-    let discountPercent: String?
+    var id: String?
+    var price: String?
+    var upc: String?
+    var sku: String?
 }
 
-// MARK: - SingleProductMerchant
-
-struct SingleProductMerchant: Codable {
-    let id: String?
-    let productId: String?
-    let upc: String?
-    let sku: String?
-    let created: String?
-    let modified: String?
-    let multipleProductsPerPage: String?
+// MARK: - ProductMerchantProductMerchant
+struct ProductMerchantProductMerchant: Codable {
+    var id: String?
+    var productId: String?
+    var upc: String?
+    var sku: String?
 }

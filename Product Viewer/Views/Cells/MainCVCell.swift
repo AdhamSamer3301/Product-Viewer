@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class MainCVCell: UICollectionViewCell {
 
@@ -20,4 +21,13 @@ class MainCVCell: UICollectionViewCell {
         self.layer.borderColor = UIColor(named: "AccentColor")?.cgColor
     }
 
+    func configureCell(item: Product) -> MainCVCell{
+        
+        productName.text = item.Product?.name
+        productDescription.text = item.Product?.description
+        productPrice.text = "\(item.Product?.price ?? "")$"
+        productImage.kf.setImage(with: URL(string: item.Product?.imageUrl ?? ""))
+        
+        return self
+    }
 }
