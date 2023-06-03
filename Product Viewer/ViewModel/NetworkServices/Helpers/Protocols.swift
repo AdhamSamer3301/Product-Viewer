@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+protocol GetData {
+    static func fetchData<T>(url: String?, completionHandler: @escaping ([T]?) -> Void) where T: Decodable
+}

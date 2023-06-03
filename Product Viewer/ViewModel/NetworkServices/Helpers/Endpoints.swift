@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+var baseUrl = "https://www.nweave.com/wp-content/uploads/2012/09/featured.txt"
+
+enum Endpoints {
+    case products
+    var path: String {
+        switch self {
+        case .products:
+            return "\(baseUrl)"
+        }
+    }
+}

@@ -6,3 +6,20 @@
 //
 
 import Foundation
+
+class ViewModel {
+    
+    
+    var bindDataToVC: (() -> Void) = {}
+    var products: [Product]! {
+        didSet {
+            bindDataToVC()
+        }
+    }
+    
+    func getData(url: Endpoints) {
+        NetworkService.fetchData(url: url.path) { response in
+            self.products = response ?? []
+        }
+    }
+}

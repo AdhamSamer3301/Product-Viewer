@@ -4,21 +4,6 @@
 <dict>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
-		<key>NSAppTransportSecurity</key>
-		<dict>
-			<key>NSExceptionDomains</key>
-			<dict>
-				<key>www.nweave.com/wp-content/uploads/2012/09/featured.txt</key>
-				<dict>
-					<key>NSExceptionAllowsInsecureHTTPLoads</key>
-					<true/>
-					<key>NSExceptionMinimumTLSVersion</key>
-					<string>0</string>
-					<key>NSIncludesSubdomains</key>
-					<true/>
-				</dict>
-			</dict>
-		</dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
 		<false/>
 		<key>UISceneConfigurations</key>
