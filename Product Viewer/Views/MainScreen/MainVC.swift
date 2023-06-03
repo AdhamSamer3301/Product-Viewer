@@ -72,6 +72,13 @@ extension MainVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let productDetailsVC = storyboard?.instantiateViewController(withIdentifier: "productDetailsVC") as! ProductDetailsVC
+        if isNetworkAvailable {
+            productDetailsVC.flag = 0
+            productDetailsVC.product = allProducts?[indexPath.row].Product
+        }else{
+            productDetailsVC.flag = 1
+            productDetailsVC.coreProduct = coreProducts[indexPath.row]
+        }
         navigationController?.pushViewController(productDetailsVC, animated: true)
     }
 

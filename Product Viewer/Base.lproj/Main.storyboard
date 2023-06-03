@@ -94,17 +94,89 @@
                                     <constraint firstAttribute="height" constant="191" id="5e1-UV-lFU"/>
                                 </constraints>
                             </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yWx-Cm-QkA">
+                                <rect key="frame" x="4" y="381" width="385" height="471"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="1Ur-6q-ROR">
+                                        <rect key="frame" x="4" y="8" width="364" height="463"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="140" translatesAutoresizingMaskIntoConstraints="NO" id="Upy-ax-Y7W">
+                                                <rect key="frame" x="8" y="8" width="348" height="33.666666666666664"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKo-Mu-ipc">
+                                                        <rect key="frame" x="0.0" y="0.0" width="138.33333333333334" height="33.666666666666664"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ez9-p9-3Kh">
+                                                        <rect key="frame" x="278.33333333333331" y="0.0" width="69.666666666666686" height="33.666666666666664"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eck-C9-ptE">
+                                                <rect key="frame" x="8" y="50" width="348" height="191"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="191" id="NoM-bC-IO0"/>
+                                                </constraints>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Upy-ax-Y7W" firstAttribute="top" secondItem="1Ur-6q-ROR" secondAttribute="top" constant="8" id="0tg-Nh-pLJ"/>
+                                            <constraint firstItem="Eck-C9-ptE" firstAttribute="leading" secondItem="1Ur-6q-ROR" secondAttribute="leading" constant="8" id="9tI-JF-PQd"/>
+                                            <constraint firstItem="Eck-C9-ptE" firstAttribute="top" secondItem="Upy-ax-Y7W" secondAttribute="bottom" constant="8.3333333333333357" id="ebQ-2W-h3T"/>
+                                            <constraint firstAttribute="trailing" secondItem="Eck-C9-ptE" secondAttribute="trailing" constant="8" id="gBq-pT-EfM">
+                                                <variation key="heightClass=compact-widthClass=compact" constant="8"/>
+                                            </constraint>
+                                            <constraint firstItem="Upy-ax-Y7W" firstAttribute="leading" secondItem="1Ur-6q-ROR" secondAttribute="leading" constant="8" id="o7e-k4-3Yw"/>
+                                            <constraint firstAttribute="trailing" secondItem="Upy-ax-Y7W" secondAttribute="trailing" constant="8" id="xoP-pK-9G9">
+                                                <variation key="heightClass=compact-widthClass=compact" constant="8"/>
+                                            </constraint>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="1Ur-6q-ROR" firstAttribute="bottom" secondItem="Lap-sk-nxM" secondAttribute="bottom" id="73K-Hh-i19"/>
+                                    <constraint firstAttribute="trailing" secondItem="1Ur-6q-ROR" secondAttribute="trailing" constant="8" id="EzW-3t-aCp">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="8"/>
+                                    </constraint>
+                                    <constraint firstAttribute="bottom" secondItem="1Ur-6q-ROR" secondAttribute="bottom" id="Vy9-JS-pVD"/>
+                                    <constraint firstItem="1Ur-6q-ROR" firstAttribute="top" secondItem="Lap-sk-nxM" secondAttribute="top" constant="8" id="Weo-SB-SKu"/>
+                                    <constraint firstItem="1Ur-6q-ROR" firstAttribute="leading" secondItem="Lap-sk-nxM" secondAttribute="leading" constant="4" id="lAb-y9-WES"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="DQ7-ug-6MV"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Lap-sk-nxM"/>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ber-c8-vbQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ohA-xF-5Cc" firstAttribute="top" secondItem="ber-c8-vbQ" secondAttribute="top" constant="4" id="AF2-xC-8cY"/>
                             <constraint firstItem="ber-c8-vbQ" firstAttribute="trailing" secondItem="ohA-xF-5Cc" secondAttribute="trailing" constant="16" id="BZb-Af-4Ex"/>
+                            <constraint firstItem="yWx-Cm-QkA" firstAttribute="leading" secondItem="AUC-Gp-Mls" secondAttribute="leading" constant="4" id="GZb-C3-53r">
+                                <variation key="heightClass=compact-widthClass=compact" constant="270"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="yWx-Cm-QkA" secondAttribute="trailing" constant="4" id="Hfd-HY-2gf">
+                                <variation key="heightClass=compact-widthClass=compact" constant="4"/>
+                            </constraint>
                             <constraint firstItem="ohA-xF-5Cc" firstAttribute="leading" secondItem="ber-c8-vbQ" secondAttribute="leading" constant="16" id="Lqz-Pd-PoG">
                                 <variation key="heightClass=compact-widthClass=compact" constant="220"/>
                             </constraint>
+                            <constraint firstAttribute="bottom" secondItem="yWx-Cm-QkA" secondAttribute="bottom" id="Ucf-kw-vnV"/>
                             <constraint firstItem="D4x-Py-TSs" firstAttribute="top" relation="lessThanOrEqual" secondItem="ber-c8-vbQ" secondAttribute="top" constant="130" id="XjY-cU-45i">
                                 <variation key="heightClass=compact-widthClass=compact" constant="8"/>
+                            </constraint>
+                            <constraint firstItem="yWx-Cm-QkA" firstAttribute="top" secondItem="ohA-xF-5Cc" secondAttribute="bottom" constant="200" id="bFU-uS-pFb">
+                                <variation key="heightClass=compact-widthClass=compact" constant="32"/>
                             </constraint>
                             <constraint firstItem="D4x-Py-TSs" firstAttribute="leading" secondItem="ber-c8-vbQ" secondAttribute="leading" constant="16" id="nYW-te-WtF">
                                 <variation key="heightClass=regular-widthClass=compact" constant="8"/>
@@ -113,6 +185,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="descriptionTxtView" destination="Eck-C9-ptE" id="fcf-aI-rct"/>
+                        <outlet property="priceLabel" destination="Ez9-p9-3Kh" id="HwE-Y2-wdU"/>
                         <outlet property="productImage" destination="D4x-Py-TSs" id="khx-uT-mZs"/>
                         <outlet property="productName" destination="ohA-xF-5Cc" id="98i-UG-FAz"/>
                     </connections>
@@ -149,6 +223,9 @@
         <namedColor name="Secondary Color">
             <color red="1" green="0.69411764705882351" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
