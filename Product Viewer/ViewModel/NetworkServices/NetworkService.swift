@@ -17,10 +17,10 @@ class NetworkService: GetData {
             guard let data = data else { return }
             do {
                 let json = try JSONDecoder().decode([T].self, from: data)
-                print(json)
+                //print(json)
                 completionHandler(json)
             } catch {
-                print(error.localizedDescription)
+                //print(error.localizedDescription)
                 completionHandler(nil)
             }
         }

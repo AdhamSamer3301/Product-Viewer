@@ -37,7 +37,7 @@ class CoreDataManager {
         productToSave.setValue(item?.name, forKey: "name")
         productToSave.setValue(item?.id, forKey: "id")
         productToSave.setValue(item?.description, forKey: "details")
-        productToSave.setValue(item?.imageUrl, forKey: "image")
+        productToSave.setValue(refineLink(url: item?.image_url ?? ""), forKey: "image")
         productToSave.setValue(item?.price, forKey: "price")
         do {
             try managedContext.save()
@@ -68,5 +68,20 @@ class CoreDataManager {
             }
         }
     }
+    
+    func foundInCore(itemToSearch: String) -> Bool {
+        let products = fetchFromCoreData()
+        for product in products {
+            if product.value(forKey: "id") as! String == itemToSearch {
+                return true
+            }
+        }
+        return false
+    }
 }
 
+extension CoreDataManager {
+    func refineLink(url: String?) -> String {
+        return url?.replacingOccurrences(of: "http://", with: "https://") ?? ""
+    }
+}

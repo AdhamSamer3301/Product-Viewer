@@ -26,7 +26,7 @@ struct ProductClass: Codable {
     var name: String?
     var description: String?
     var price: String?
-    var imageUrl: String?
+    var image_url: String?
 }
 
 // MARK: - ProductMerchantElement
@@ -53,7 +53,7 @@ struct MerchantProduct: Codable {
 // MARK: - ProductMerchantProductMerchant
 struct ProductMerchantProductMerchant: Codable {
     var id: String?
-    var productId: String?
+    var product_id: String?
     var upc: String?
     var sku: String?
 }
