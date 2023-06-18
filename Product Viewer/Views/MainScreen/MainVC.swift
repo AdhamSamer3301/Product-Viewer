@@ -42,10 +42,12 @@ class MainVC: UIViewController {
         if reachability?.connection != .unavailable {
             vm.getData(url: .products)
             vm.bindDataToVC = { () in
-                DispatchQueue.main.async {
+                DispatchQueue.global().async {
                     self.allProducts? = self.vm.products
                     self.searchProducts? = self.vm.products
-                    self.productsCollectionView.reloadData()
+                    DispatchQueue.main.async {
+                        self.productsCollectionView.reloadData()
+                    }
                 }
             }
             isNetworkAvailable = true
@@ -75,7 +77,7 @@ extension MainVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
         if isNetworkAvailable {
             productDetailsVC.flag = 0
             productDetailsVC.product = allProducts?[indexPath.row].Product
-        }else{
+        } else {
             productDetailsVC.flag = 1
             productDetailsVC.coreProduct = coreProducts[indexPath.row]
         }
@@ -143,9 +145,9 @@ extension MainVC: UISearchBarDelegate {
             if searchText.isEmpty {
                 coreProducts = searchCoreProducts
             }
-            
+
             for product in searchCoreProducts {
-                let productName:String = product.value(forKey: "name") as! String
+                let productName: String = product.value(forKey: "name") as! String
                 if productName.lowercased().contains(searchText.lowercased()) {
                     coreProducts.append(product)
                 }
